@@ -24,3 +24,5 @@ jobs:
     - name: Build
       run: go build -v ./...
     - uses: release-drafter/release-drafter@v6
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
